@@ -1,0 +1,3 @@
+class Ibm extends BestCompany{
+
+}
