@@ -5,11 +5,13 @@ class Cricket{
 	 
 	 public boolean addPlayers(String playerName){
 	        boolean isAdded = false;
+			if(index<playerNames.length){
 			if( playerName != null){
 			   playerNames[index] = playerName;
 			   index++;
 			   
 			}
+		}else{System.out.println("Storage is full");}
 			return isAdded;
 	    
 	 }

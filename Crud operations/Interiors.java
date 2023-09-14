@@ -5,11 +5,14 @@ class Interiors{
 	 
 	 public boolean addInteriors(String interior){
 	       boolean isAdded = false;
+		   if(i<interiors.length){
 		   if(interior != null){
 		      interiors[i]=interior;
 			  i++;
 			  isAdded = true;
-		   }return isAdded;
+		   }
+		   }else{System.out.println("Full....");}
+		   return isAdded;
 	 
 	 }
 	 

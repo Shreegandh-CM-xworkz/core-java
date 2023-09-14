@@ -11,7 +11,7 @@ class SpotExe{
 	  sp.addSongs("Pailwan");
 	  sp.addSongs("Gaja");
 	  sp.addSongs("Tum Hi Ho");
-	  sp.addSongs("Mercy");
+	  sp.addSongs("Gaja");
 	  sp.addSongs("Dheera");
 	  
 	  sp.getDetails();
