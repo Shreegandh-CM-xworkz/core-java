@@ -1,3 +1,1 @@
-class A{
-}
-class B{}
+task:
