@@ -1,1 +1,0 @@
-class Inox extends Theater{}

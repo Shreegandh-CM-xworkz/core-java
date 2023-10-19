@@ -1,1 +1,0 @@
-class Apartment extends Building{}

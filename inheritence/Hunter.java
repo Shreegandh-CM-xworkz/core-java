@@ -1,3 +1,0 @@
-class Hunter extends Ott{
-
-}
