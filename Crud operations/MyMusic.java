@@ -1,0 +1,4 @@
+class MyMusic extends Spotify{
+
+
+}

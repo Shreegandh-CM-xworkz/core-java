@@ -13,7 +13,7 @@ class Spotify{
 			   songNames[index] = songName;
 			   index++;
 			   }else{System.out.println("Null values are not allowed");}
-			}//else{System.out.println("Value is already present");}
+			}
 			}
 			else{System.out.println("List is full...");}
 			return isAdded;
@@ -30,12 +30,55 @@ class Spotify{
 	 public boolean duplicateValue(String songName){
 		 boolean exists=false;
 		 for( String value:songNames){
-
+ 
 			 if(songName == value){
 				 System.out.println("The Value is already present");
 				 exists=true;
 			 }
 		 }
 		 return exists;
+		 
+		
 	 }
+	 public String search(String name){
+		 for(String value:songNames){
+			 if(value==name){
+				 System.out.println("The song is present the list");
+				 System.out.println(value);
+				 return value;
+				 
+			 }
+		 }
+		 return null;
+	 }
+	 
+	 String afterDelete[];
+	 public boolean delete(String name){
+		 boolean isDeleted=false;
+		 
+		 int count=0;
+		 int ind =0;
+		 for(String songsList:songNames){
+		  if(songsList!=name){
+			  count++;
+		  }
+	  }
+		  afterDelete=new String[count];
+		  
+		  
+		  for(int i=0;i<songNames.length;i++){
+			  if(songNames[i]!=name){
+				 afterDelete[ind++]=songNames[i];
+				 isDeleted=true;
+			  }
+		  }
+		  return isDeleted;
+		 
+	 }  
+	 public void deletedList(){
+		 for(String afterDeleteList:afterDelete){
+			  System.out.println(afterDeleteList);
+			  } 
+	 }
+	
 }

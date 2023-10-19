@@ -2,19 +2,21 @@ class SpotExe{
 
      public static void main (String args[]){
 	 
-	  Spotify sp = new Spotify();
-	  sp.addSongs("Kai Kahele Kannada Kali");
-	  sp.addSongs("Ninna Nodalentho");
-	  sp.addSongs("Hukum");
-	  sp.addSongs("Toofan");
-	  sp.addSongs("Sulthana");
-	  sp.addSongs("Pailwan");
-	  sp.addSongs("Gaja");
-	  sp.addSongs("Tum Hi Ho");
-	  sp.addSongs("Gaja");
-	  sp.addSongs("Dheera");
+	  MyMusic mm = new MyMusic();
+	  mm.addSongs("Kai Kahele Kannada Kali");
+	  mm.addSongs("Ninna Nodalentho");
+	  mm.addSongs("Hukum");
+	  mm.addSongs("Toofan");
+	  mm.addSongs("Sulthana");
+	  mm.addSongs("Pailwan");
+	  mm.addSongs("Gaja");
+	  mm.addSongs("Tum Hi Ho");
+	   mm.addSongs("Suyodhana");
+	  mm.addSongs("Dheera");
 	  
-	  sp.getDetails();
-	 
+	 // mm.getDetails();
+	 // mm.search("Dheera");
+	   mm.delete("Gaja");
+	   mm.deletedList();
 	 }
 }	 
